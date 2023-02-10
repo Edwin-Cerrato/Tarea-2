@@ -21,7 +21,7 @@ namespace Tarea_2
         {
             //Declaración de Var de cajas de texto
 
-            decimal nota1=Convert.ToDecimal (txtNota1.Text);
+            decimal nota1=  Convert.ToDecimal(txtNota1.Text);
             decimal nota2 = Convert.ToDecimal(txtNota2.Text);
             decimal nota3 = Convert.ToDecimal(txtNota3.Text);
             decimal nota4 = Convert.ToDecimal(txtNota4.Text);
@@ -32,7 +32,11 @@ namespace Tarea_2
             //llamado de Función 
             Resultado = await PromedioEtudianteAsync(nota1,nota2,nota3,nota4);
 
-        MessageBox.Show($"EL PROMEDIO FINAL ES :{ Resultado}");
+            //MessageBox.Show($"EL PROMEDIO FINAL ES :{ Resultado}");
+
+            txtPromedio.Text = Resultado.ToString();    
+
+
         }
 
         //Función Asincrona
@@ -45,5 +49,6 @@ namespace Tarea_2
             });
                 return promediofinal;
         }
+
     }
 }
