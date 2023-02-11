@@ -46,7 +46,6 @@ namespace Tarea_2
             }
             Alerta.Clear();
 
-
             //Declaración de Var de cajas de texto
             decimal nota1 = Convert.ToDecimal(txtNota1.Text);
             decimal nota2 = Convert.ToDecimal(txtNota2.Text);
@@ -80,6 +79,7 @@ namespace Tarea_2
             txtNota1.Focus();
 
             return promediofinal;
+
         }
 
     }
