@@ -38,8 +38,6 @@
             this.txtNota2 = new System.Windows.Forms.TextBox();
             this.txtNota3 = new System.Windows.Forms.TextBox();
             this.txtNota4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtPromedio = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -131,28 +129,12 @@
             this.txtNota4.Size = new System.Drawing.Size(128, 20);
             this.txtNota4.TabIndex = 9;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 317);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 21);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Promedio Final";
-            // 
-            // txtPromedio
-            // 
-            this.txtPromedio.Location = new System.Drawing.Point(150, 318);
-            this.txtPromedio.Name = "txtPromedio";
-            this.txtPromedio.Size = new System.Drawing.Size(128, 20);
-            this.txtPromedio.TabIndex = 11;
-            // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(26, 271);
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(149, 277);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(135, 34);
+            this.btnCalcular.Size = new System.Drawing.Size(128, 34);
             this.btnCalcular.TabIndex = 12;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -164,8 +146,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(563, 435);
             this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.txtPromedio);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtNota4);
             this.Controls.Add(this.txtNota3);
             this.Controls.Add(this.txtNota2);
@@ -195,8 +175,6 @@
         private System.Windows.Forms.TextBox txtNota2;
         private System.Windows.Forms.TextBox txtNota3;
         private System.Windows.Forms.TextBox txtNota4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtPromedio;
         private System.Windows.Forms.Button btnCalcular;
     }
 }

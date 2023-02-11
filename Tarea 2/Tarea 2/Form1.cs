@@ -26,16 +26,11 @@ namespace Tarea_2
             decimal nota3 = Convert.ToDecimal(txtNota3.Text);
             decimal nota4 = Convert.ToDecimal(txtNota4.Text);
 
-            //Txt Resultado
-            decimal Resultado;
 
             //llamado de Función 
-            Resultado = await PromedioEtudianteAsync(nota1,nota2,nota3,nota4);
+            decimal Resultado = await PromedioEtudianteAsync(nota1,nota2,nota3,nota4);
 
-            //MessageBox.Show($"EL PROMEDIO FINAL ES :{ Resultado}");
-
-            txtPromedio.Text = Resultado.ToString();    
-
+            MessageBox.Show($"EL PROMEDIO FINAL DEL ESTUDIANTE ES :{ Resultado}","PROMEDIO FINAL",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
         }
 
@@ -47,7 +42,16 @@ namespace Tarea_2
 
                 return (n1 + n2 + n3 + n4 )/ 4;
             });
-                return promediofinal;
+
+            txtNota1.Clear();
+            txtNota2.Clear();
+            txtNota3.Clear();
+            txtNota4.Clear();
+
+
+            txtNota1.Focus();
+
+            return promediofinal;
         }
 
     }
